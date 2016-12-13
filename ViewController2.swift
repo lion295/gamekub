@@ -9,7 +9,7 @@
 import UIKit
 
 var kubik = 0
-
+var kubik2 = 0
 class ViewController2: UIViewController {
     
     let pers1i: UIImage = UIImage(named: "p1.png")!
@@ -30,6 +30,8 @@ class ViewController2: UIViewController {
     
     @IBOutlet weak var kub_img: UIImageView!
     
+
+    
     func kubik_go () -> Int{
         let  k = Int(arc4random_uniform(6)+1)
         let  kub_num: String = String(k) + ".png"
@@ -41,12 +43,30 @@ class ViewController2: UIViewController {
     
     }
     
+    func pers2go()
+    {
+        kubik2 += kubik_go()
+        if ( kubik2<63){
+            pers2_view()
+        }
+        
+    
+    }
+    
     
     @IBAction func go(_ sender: UIButton) {
         kubik += kubik_go()
         if (kubik<63){
             pers1_view()
+            
         }
+        
+       _ = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(ViewController2.pers2go), userInfo: nil, repeats: false)
+        
+      //  _ = Timer.scheduledTimerWithTimeInteval (3, target: self, selector: #selector(ViewController2.pers2go), provideImage: nil, repeats: false))
+        
+     //   _ = Timer.init(interval: 3, target: self, selector:Selector("pers2go") ,  , repeats: false)
+        
     }
     
     
@@ -65,12 +85,16 @@ class ViewController2: UIViewController {
         view.addSubview(pers1v)
         
                     }
-        func pers2_view(){
+    
+    func pers2_view(){
             
-            pers2v.image = pers1i
+            pers2v.image = pers2i
             pers2v.frame.size.width = 40
             pers2v.frame.size.height = 40
-            
+        UIView.animate(withDuration: 0.8, animations: {
+            self.pers2v.frame.origin.x = CGFloat(self.x[kubik2])
+            self.pers2v.frame.origin.y = CGFloat(self.y[kubik2])
+        })
             view.addSubview(pers2v)
             
                             }
