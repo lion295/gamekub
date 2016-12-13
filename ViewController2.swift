@@ -61,7 +61,7 @@ class ViewController2: UIViewController {
             
         }
         
-       _ = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(ViewController2.pers2go), userInfo: nil, repeats: false)
+      // _ = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(ViewController2.pers2go), userInfo: nil, repeats: false)
         
       //  _ = Timer.scheduledTimerWithTimeInteval (3, target: self, selector: #selector(ViewController2.pers2go), provideImage: nil, repeats: false))
         
