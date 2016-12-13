@@ -12,6 +12,16 @@
 		84697F4D1E0013D6001534B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84697F4B1E0013D6001534B7 /* Main.storyboard */; };
 		84697F4F1E0013D6001534B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84697F4E1E0013D6001534B7 /* Assets.xcassets */; };
 		84697F521E0013D6001534B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84697F501E0013D6001534B7 /* LaunchScreen.storyboard */; };
+		84697F5A1E001557001534B7 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697F591E001557001534B7 /* ViewController2.swift */; };
+		84697F621E001BCA001534B7 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84697F5B1E001BCA001534B7 /* 1.png */; };
+		84697F631E001BCA001534B7 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84697F5C1E001BCA001534B7 /* 2.png */; };
+		84697F641E001BCA001534B7 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 84697F5D1E001BCA001534B7 /* 3.png */; };
+		84697F651E001BCA001534B7 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 84697F5E1E001BCA001534B7 /* 4.png */; };
+		84697F661E001BCA001534B7 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 84697F5F1E001BCA001534B7 /* 5.png */; };
+		84697F671E001BCA001534B7 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 84697F601E001BCA001534B7 /* 6.png */; };
+		84697F681E001BCA001534B7 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 84697F611E001BCA001534B7 /* map.png */; };
+		84697F6B1E001CF6001534B7 /* p2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84697F691E001CF6001534B7 /* p2.png */; };
+		84697F6C1E001CF6001534B7 /* p1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84697F6A1E001CF6001534B7 /* p1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		84697F4E1E0013D6001534B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84697F511E0013D6001534B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84697F531E0013D6001534B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84697F591E001557001534B7 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = ../ViewController2.swift; sourceTree = "<group>"; };
+		84697F5B1E001BCA001534B7 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		84697F5C1E001BCA001534B7 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		84697F5D1E001BCA001534B7 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		84697F5E1E001BCA001534B7 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		84697F5F1E001BCA001534B7 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		84697F601E001BCA001534B7 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		84697F611E001BCA001534B7 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		84697F691E001CF6001534B7 /* p2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2.png; sourceTree = "<group>"; };
+		84697F6A1E001CF6001534B7 /* p1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +60,15 @@
 			children = (
 				84697F461E0013D6001534B7 /* game */,
 				84697F451E0013D6001534B7 /* Products */,
+				84697F5B1E001BCA001534B7 /* 1.png */,
+				84697F5C1E001BCA001534B7 /* 2.png */,
+				84697F5D1E001BCA001534B7 /* 3.png */,
+				84697F5E1E001BCA001534B7 /* 4.png */,
+				84697F5F1E001BCA001534B7 /* 5.png */,
+				84697F601E001BCA001534B7 /* 6.png */,
+				84697F611E001BCA001534B7 /* map.png */,
+				84697F691E001CF6001534B7 /* p2.png */,
+				84697F6A1E001CF6001534B7 /* p1.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +85,7 @@
 			children = (
 				84697F471E0013D6001534B7 /* AppDelegate.swift */,
 				84697F491E0013D6001534B7 /* ViewController.swift */,
+				84697F591E001557001534B7 /* ViewController2.swift */,
 				84697F4B1E0013D6001534B7 /* Main.storyboard */,
 				84697F4E1E0013D6001534B7 /* Assets.xcassets */,
 				84697F501E0013D6001534B7 /* LaunchScreen.storyboard */,
@@ -96,6 +126,7 @@
 				TargetAttributes = {
 					84697F431E0013D6001534B7 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9Q2X735YQL;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +155,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				84697F521E0013D6001534B7 /* LaunchScreen.storyboard in Resources */,
+				84697F6C1E001CF6001534B7 /* p1.png in Resources */,
+				84697F651E001BCA001534B7 /* 4.png in Resources */,
+				84697F621E001BCA001534B7 /* 1.png in Resources */,
+				84697F671E001BCA001534B7 /* 6.png in Resources */,
+				84697F681E001BCA001534B7 /* map.png in Resources */,
+				84697F631E001BCA001534B7 /* 2.png in Resources */,
+				84697F6B1E001CF6001534B7 /* p2.png in Resources */,
+				84697F641E001BCA001534B7 /* 3.png in Resources */,
+				84697F661E001BCA001534B7 /* 5.png in Resources */,
 				84697F4F1E0013D6001534B7 /* Assets.xcassets in Resources */,
 				84697F4D1E0013D6001534B7 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +178,7 @@
 			files = (
 				84697F4A1E0013D6001534B7 /* ViewController.swift in Sources */,
 				84697F481E0013D6001534B7 /* AppDelegate.swift in Sources */,
+				84697F5A1E001557001534B7 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +299,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9Q2X735YQL;
 				INFOPLIST_FILE = game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.game";
+				PRODUCT_BUNDLE_IDENTIFIER = Testgame295.game;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -270,9 +312,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9Q2X735YQL;
 				INFOPLIST_FILE = game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.game";
+				PRODUCT_BUNDLE_IDENTIFIER = Testgame295.game;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -297,6 +340,7 @@
 				84697F581E0013D6001534B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
