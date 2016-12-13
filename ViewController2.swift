@@ -8,6 +8,8 @@
 
 import UIKit
 
+var kubik = 0
+
 class ViewController2: UIViewController {
     
     let pers1i: UIImage = UIImage(named: "p1.png")!
@@ -15,6 +17,16 @@ class ViewController2: UIViewController {
     
     let pers2i: UIImage = UIImage (named: "p2.png")!
     let pers2v: UIImageView = UIImageView ()
+    var x: [Int] =  [0,40,80,120,160,200,240,280,280,240,200,160,120,80,40,0,
+                     0,40,80,120,160,200,240,280,280,240,200,160,120,80,40,0,
+                     0,40,80,120,160,200,240,280,280,240,200,160,120,80,40,0,
+                     0,40,80,120,160,200,240,280,280,240,200,160,120,80,40,0
+                     ]
+    var y: [Int] = [300,300,300,300,300,300,300,300,260,260,260,260,260,260,260,260,
+                    220,220,220,220,220,220,220,220,
+                    180,180,180,180,180,180,180,180,140,140,140,140,140,140,140,140,
+                    100,100,100,100,100,100,100,100,60,60,60,60,60,60,60,60,
+                    20,20,20,20,20,20,20,20]
     
     @IBOutlet weak var kub_img: UIImageView!
     
@@ -31,7 +43,10 @@ class ViewController2: UIViewController {
     
     
     @IBAction func go(_ sender: UIButton) {
-        var a = kubik_go()
+        kubik += kubik_go()
+        if (kubik<63){
+            pers1_view()
+        }
     }
     
     
@@ -41,6 +56,11 @@ class ViewController2: UIViewController {
         pers1v.image = pers1i
         pers1v.frame.size.width = 40
         pers1v.frame.size.height = 40
+        UIView.animate(withDuration: 0.8, animations: {
+            self.pers1v.frame.origin.x = CGFloat(self.x[kubik])
+            self.pers1v.frame.origin.y = CGFloat(self.y[kubik])
+        })
+        
         
         view.addSubview(pers1v)
         
