@@ -10,6 +10,9 @@ import UIKit
 
 var kubik = 0
 var kubik2 = 0
+var pers1win: Bool = false
+var pers2win: Bool = false
+
 class ViewController2: UIViewController {
     
     let pers1i: UIImage = UIImage(named: "p1.png")!
@@ -50,6 +53,7 @@ class ViewController2: UIViewController {
                 if ( kubik2<63){
             pers2_view()
         }
+        
         go.isEnabled = true
     
     }
@@ -64,12 +68,34 @@ class ViewController2: UIViewController {
             pers1_view()
             
         }
+        
+        else {
+        
+             if (pers1win != true)
+             {
+            
+                    kubik = 63
+                    pers1_view()
+                    pers1win = true
+             }
+            
+             else {
+                  kubik = 0
+                    kubik2 = 0
+                    pers1_view()
+                    pers2_view()
+                    pers1win = false
+                
+                
+            
+            }
+            
+            
+        }
+        
+        
         go.isEnabled = false
        _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController2.pers2go), userInfo: nil, repeats: false)
-        
-      //  _ = Timer.scheduledTimerWithTimeInteval (3, target: self, selector: #selector(ViewController2.pers2go), provideImage: nil, repeats: false))
-        
-     //   _ = Timer.init(interval: 3, target: self, selector:Selector("pers2go") ,  , repeats: false)
         
     }
     
