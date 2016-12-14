@@ -48,7 +48,7 @@ class ViewController2: UIViewController {
     
     func pers2go()
     {
-        kubik2 += kubik_go()
+        kubik2 += kubik_go() + 30
         hod2.text = "Позиция второго игрока: \(kubik2)"
                 if ( kubik2<63){
             pers2_view()
@@ -87,14 +87,40 @@ class ViewController2: UIViewController {
     
     @IBAction func go(_ sender: UIButton) {
         kubik += kubik_go()
+        
                             hod1.text = "Позиция первого игрока: \(kubik)"
         
 
         if (kubik<63){
+            if (kubik2 != 63)
+            {
             pers1_view()
             go.isEnabled = false
             _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController2.pers2go), userInfo: nil, repeats: false)
-        }
+            }
+            
+            else {
+                // персонаж 2 выиграл
+                
+                let alert = UIAlertController(title: "Вы проиграли!", message: "лох, епта!", preferredStyle: .alert
+                )
+                alert.addAction (UIAlertAction(title: "ок", style: .default, handler: nil))
+                
+                self.present(alert, animated: true, completion: nil)
+                
+                kubik = 0
+                kubik2 = 0
+                pers1_view()
+                pers2_view()
+                pers1win = false
+                hod2.text = "Позиция первого игрока: \(kubik2)"
+                hod1.text = "Позиция первого игрока: \(kubik)"
+                pers2win = false
+            }
+            
+            
+            
+            }
         
         else {
         
@@ -107,13 +133,25 @@ class ViewController2: UIViewController {
              }
             
              else {
-                  kubik = 0
+                // персонаж 1 выиграл
+                
+              let alert = UIAlertController(title: "Вы победили!", message: "Поздравляем, епта!", preferredStyle: .alert
+                )
+                alert.addAction (UIAlertAction(title: "ок", style: .default, handler: nil))
+                
+                self.present(alert, animated: true, completion: nil)
+                
+                
+                
+                    kubik = 0
                     kubik2 = 0
                     pers1_view()
                     pers2_view()
                     pers1win = false
+                    hod2.text = "Позиция первого игрока: \(kubik2)"
                     hod1.text = "Позиция первого игрока: \(kubik)"
                 
+               
             
             }
             
