@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 var kubik = 0
 var kubik2 = 0
@@ -14,7 +15,8 @@ var pers1win: Bool = false
 var pers2win: Bool = false
 
 class ViewController2: UIViewController {
-    
+    var go_sound = AVAudioPlayer()
+     var go_sound2 = AVAudioPlayer()
     let pers1i: UIImage = UIImage(named: "p1.png")!
     let pers1v: UIImageView = UIImageView()
     
@@ -49,6 +51,18 @@ class ViewController2: UIViewController {
     func pers2go()
     {
         kubik2 += kubik_go() + 30
+        
+        let sound2 = NSURL(fileURLWithPath:Bundle.main.path(forResource: "pers2go2", ofType: "mp3")!)
+        do{
+            go_sound2 = try AVAudioPlayer(contentsOf: sound2 as URL)
+            go_sound2.prepareToPlay()
+            go_sound2.play()
+        }
+        catch
+        {
+            print("Error2")
+        }
+        
         hod2.text = "Позиция второго игрока: \(kubik2)"
                 if ( kubik2<63){
             pers2_view()
@@ -87,6 +101,17 @@ class ViewController2: UIViewController {
     
     @IBAction func go(_ sender: UIButton) {
         kubik += kubik_go()
+      //  led sound = NSURL(fileURLWithPath:Bundle.main.path(forRecourse: "pers2go1", ofType: ",mp3")!)
+        let sound = NSURL(fileURLWithPath:Bundle.main.path(forResource: "pers2go1", ofType: "mp3")!)
+        do{
+            go_sound = try AVAudioPlayer(contentsOf: sound as URL)
+            go_sound.prepareToPlay()
+            go_sound.play()
+        }
+        catch
+        {
+            print("Error")
+        }
         
                             hod1.text = "Позиция первого игрока: \(kubik)"
         
