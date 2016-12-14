@@ -63,7 +63,7 @@ class ViewController2: UIViewController {
             print("Error2")
         }
         
-        hod2.text = "Позиция второго игрока: \(kubik2)"
+      //  hod2.text = "Позиция второго игрока: \(kubik2)"
                 if ( kubik2<63){
             pers2_view()
         }
