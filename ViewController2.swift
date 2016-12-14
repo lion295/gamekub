@@ -50,7 +50,7 @@ class ViewController2: UIViewController {
     
     func pers2go()
     {
-        kubik2 += kubik_go() + 30
+        kubik2 += kubik_go() 
         
         let sound2 = NSURL(fileURLWithPath:Bundle.main.path(forResource: "pers2go2", ofType: "mp3")!)
         do{
