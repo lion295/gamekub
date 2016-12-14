@@ -53,20 +53,47 @@ class ViewController2: UIViewController {
                 if ( kubik2<63){
             pers2_view()
         }
-        
-        go.isEnabled = true
     
+        
+        else {
+            
+            if (pers2win != true)
+            {
+                
+                kubik2 = 63
+                pers2_view()
+                pers2win = true
+            }
+                
+            else {
+                kubik = 0
+                kubik2 = 0
+                pers1_view()
+                pers2_view()
+                pers2win = false
+                hod2.text = "Позиция второго игрока: \(kubik2)"
+                
+                
+            }
+            
+            
+        }
+        go.isEnabled = true
+        hod2.text = "Позиция второго игрока: \(kubik2)"
+        
+        
     }
     
     
     @IBAction func go(_ sender: UIButton) {
         kubik += kubik_go()
+                            hod1.text = "Позиция первого игрока: \(kubik)"
         
-        hod1.text = "Позиция первого игрока: \(kubik)"
 
         if (kubik<63){
             pers1_view()
-            
+            go.isEnabled = false
+            _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController2.pers2go), userInfo: nil, repeats: false)
         }
         
         else {
@@ -85,7 +112,7 @@ class ViewController2: UIViewController {
                     pers1_view()
                     pers2_view()
                     pers1win = false
-                
+                    hod1.text = "Позиция первого игрока: \(kubik)"
                 
             
             }
@@ -93,9 +120,7 @@ class ViewController2: UIViewController {
             
         }
         
-        
-        go.isEnabled = false
-       _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController2.pers2go), userInfo: nil, repeats: false)
+    
         
     }
     
