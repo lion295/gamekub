@@ -62,14 +62,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Позиция первого игрока: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6l-OM-Z8u">
-                                <rect key="frame" x="33" y="363" width="218" height="21"/>
+                                <rect key="frame" x="33" y="363" width="274" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Позиция второго игрока: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBE-oH-PAd">
-                                <rect key="frame" x="33" y="392" width="216" height="21"/>
+                                <rect key="frame" x="33" y="392" width="253" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -83,6 +83,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="go" destination="lxd-n9-HwP" id="xSN-Cg-rCW"/>
+                        <outlet property="hod1" destination="a6l-OM-Z8u" id="bbH-x1-3dX"/>
+                        <outlet property="hod2" destination="FBE-oH-PAd" id="OLc-nR-iUU"/>
                         <outlet property="kub_img" destination="J5N-cd-XnY" id="Isg-iy-S5f"/>
                     </connections>
                 </viewController>
